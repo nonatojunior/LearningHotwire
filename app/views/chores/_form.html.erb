@@ -1,4 +1,4 @@
-<%= form_with(model: chore) do |form| %>
+<%= form_with(model: chore, id: "chore_form") do |form| %>
   <% if chore.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(chore.errors.count, "error") %> prohibited this chore from being saved:</h2>
