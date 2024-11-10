@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: UTF8
+  host: localhost
+  user: postgres
+  password: postgres
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: LearningHotwire_development
+  port: 5432
+
+test:
+  <<: *default
+  database: LearningHotwire_development
+  port: 5432
