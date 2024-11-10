@@ -2,6 +2,7 @@ module.exports = {
   mode: 'jit',
   content: [ // 'purge' foi substituido por 'content' na v3.
     './app/views/**/*.html.erb',
+    './app/components/**/*.{erb,html}',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js'
   ],
