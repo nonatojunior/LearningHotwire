@@ -2,9 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="chore-modal"
 export default class extends Controller {
-  connect() {
-    console.log("Hi! we are in ChoreModalController from Stimulus")
-  }
+  static targets = ["form"] // required to track when user are clicling outside the form
 
   // hide modal
   // action: "chore-modal#hideModal"

@@ -1,6 +1,6 @@
 class ChoresController < ApplicationController
   before_action :set_chore, only: %i[show edit update destroy]
-  after_action :broadcast_insert, only: %i[create]
+  after_action :broadcast_insert, only: %i[create update]
   after_action :broadcast_remove, only: %i[destroy]
 
   # GET /chores or /chores.json
